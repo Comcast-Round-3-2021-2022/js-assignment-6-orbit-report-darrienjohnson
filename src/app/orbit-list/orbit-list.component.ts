@@ -8,6 +8,12 @@ import { Satellite } from '../satellite';
 })
 
 export class OrbitListComponent implements OnInit {
+	warningColor: boolean = false;
+	if(isSpaceDebris){
+		!this.warningColor;
+	}
+	//This controls the color but im not sure how mesh this with the isDebris function in satellite
+	
 
   @Input() satellites: Satellite[];
   constructor() { }
