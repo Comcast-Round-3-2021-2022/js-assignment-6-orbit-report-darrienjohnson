@@ -1,3 +1,5 @@
+import { style } from "@angular/animations";
+
 export class Satellite {
 
 	name: string;
@@ -12,10 +14,13 @@ export class Satellite {
 		this.launchDate = launchDate;
 		this.orbitType = orbitType;
 		this.operational = operational;
+		
    }
-	
-	isSpaceDebris(): boolean {
-		return true;
+   
+	isSpaceDebris(){
+	if(this.type === 'Space Debris'){
+	return true;
+	} return false;
    }
 
 }
